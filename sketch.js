@@ -1,8 +1,3 @@
-
-function preload() {
-    //load the images here
-}
-
 var backgroundImg;
 var mouseImg1, mouseImg2, mouseImg3, mouse;
 var catImg1, catImg2, catImg3, cat;
