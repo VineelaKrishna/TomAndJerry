@@ -1,3 +1,4 @@
+
 var backgroundImg;
 var mouseImg1, mouseImg2, mouseImg3, mouse;
 var catImg1, catImg2, catImg3, cat;
@@ -15,10 +16,10 @@ function setup(){
     createCanvas(1000,800);
     //create tom and jerry sprites here
     cat = createSprite(870,600);
-    cat.addAnimation(catImg1);
+    cat.addAnimation("cat_sleeping", catImg1);
     cat.scale = 0.2;
     mouse = createSprite(200,600);
-    mouse.addAnimation(mouseImg1);
+    mouse.addAnimation("mouse_standing",mouseImg1);
     mouse.scale = 0.2;
 
 }
@@ -33,10 +34,10 @@ function draw() {
         cat.addAnimation("catLastImage", catImg3);
         cat.x =300;
         cat.scale=0.2;
-        cat.changeAnimation("catLastImage",catImg2);
-        mouse.addAnimation("mouseLastImage", jerryImg3);
+        cat.changeAnimation("catLastImage");
+        mouse.addAnimation("mouseLastImage", mouseImg3);
         mouse.scale=0.15;
-        mouse.changeAnimation("mouseLastImage",mouseImg2);
+        mouse.changeAnimation("mouseLastImage");
     }  
     drawSprites();
 }
